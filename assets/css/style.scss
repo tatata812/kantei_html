@@ -99,6 +99,16 @@ header
     line-height: 50px;
     margin: 0 12px 0;
 
+    @include sp{
+      background-color: #fff;
+      border-radius: 0;
+      width: auto;
+      line-height: auto;
+      margin: 0;
+
+
+    }
+
   }
 
 
@@ -112,6 +122,8 @@ header
   position: relative;
   padding: 40px;
   background-color: #fff;
+
+
 
 
 
@@ -191,6 +203,11 @@ header
   left: 50%;
   transform: translateX(-50%);
   transition: .5s;
+
+  @include sp{
+    background-color: #44a136;
+
+  }
 }
 
 .hamburger-menu__bar:first-child {

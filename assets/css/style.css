@@ -1077,6 +1077,15 @@ header
   line-height: 50px;
   margin: 0 12px 0;
 }
+@media (max-width: 600px) {
+  .header__btn-wrap {
+    background-color: #fff;
+    border-radius: 0;
+    width: auto;
+    line-height: auto;
+    margin: 0;
+  }
+}
 
 .header-sp {
   opacity: 0;
@@ -1126,6 +1135,11 @@ header
   left: 50%;
   transform: translateX(-50%);
   transition: 0.5s;
+}
+@media (max-width: 600px) {
+  .hamburger-menu__bar {
+    background-color: #44a136;
+  }
 }
 
 .hamburger-menu__bar:first-child {
