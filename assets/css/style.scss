@@ -72,7 +72,6 @@ header
 
   &__menu-wrap {
 
-
     @include tab {
       display: none;
     }
@@ -99,19 +98,14 @@ header
     line-height: 50px;
     margin: 0 12px 0;
 
-    @include sp{
+    @include sp {
       background-color: #fff;
       border-radius: 0;
       width: auto;
       line-height: auto;
       margin: 0;
-
-
     }
-
   }
-
-
 }
 
 .header-sp {
@@ -204,7 +198,7 @@ header
   transform: translateX(-50%);
   transition: .5s;
 
-  @include sp{
+  @include sp {
     background-color: #44a136;
 
   }
@@ -281,11 +275,11 @@ header
   max-width: 1400px;
   overflow: hidden;
 
-  @include tab{
+  @include tab {
     padding: 100px 12px 150px;
   }
 
-  @include sp{
+  @include sp {
     padding: 100px 12px 100px;
 
   }
@@ -297,8 +291,8 @@ header
     width: 340px;
     z-index: -1;
 
-    @include pc{
-    display: none;
+    @include pc {
+      display: none;
     }
   }
 
@@ -309,9 +303,9 @@ header
     width: 340px;
     z-index: -1;
 
-    @include pc{
+    @include pc {
       display: none;
-      }
+    }
 
   }
 
@@ -328,7 +322,7 @@ header
     left: -135px;
     z-index: -1;
 
-    @include sp{
+    @include sp {
       width: 266px;
     }
   }
@@ -341,11 +335,11 @@ header
     right: -60px;
     z-index: -1;
 
-@include sp{
-  width: 180px;
-  right: -20px;
+    @include sp {
+      width: 180px;
+      right: -20px;
 
-}
+    }
 
   }
 
@@ -373,7 +367,7 @@ header
     width: 220px;
     margin: 0 auto 100px;
 
-    @include sp{
+    @include sp {
       margin: 0 auto 20px;
 
     }
@@ -390,7 +384,7 @@ header
   padding: 80px 12px;
   position: relative;
 
-  @include sp{
+  @include sp {
     padding: 40px 12px;
 
   }
@@ -402,12 +396,12 @@ header
     left: 50%;
     transform: translateX(-50%);
 
-    @include tab{
+    @include tab {
       width: 520px;
       top: -160px;
     }
 
-    @include sp{
+    @include sp {
       width: 260px;
       top: -80px;
     }
@@ -420,7 +414,7 @@ header
     border-radius: 12px;
     padding: 40px;
 
-    @include sp{
+    @include sp {
       padding: 20px;
 
     }
@@ -430,7 +424,7 @@ header
   &__ttl {
     margin: 0 0 24px;
 
-    @include sp{
+    @include sp {
       margin: 0 0 4px;
 
     }
@@ -439,7 +433,7 @@ header
   &__article-wrap {
     margin: 0 0 60px;
 
-    @include sp{
+    @include sp {
       margin: 0 0 32px;
 
     }
@@ -452,12 +446,12 @@ header
     align-items: center;
     border-bottom: #44a136 1px solid;
     padding: 8px 2px;
-    
-    &:first-child{
+
+    &:first-child {
       border-top: #44a136 1px solid;
     }
 
-    @include sp{
+    @include sp {
       gap: 8px;
 
     }
@@ -478,8 +472,8 @@ header
     line-height: 1;
     padding: 4px;
 
-    @include sp{
-    margin: 0 0 0 12px;
+    @include sp {
+      margin: 0 0 0 12px;
     }
 
     &--kaiin {
@@ -529,13 +523,13 @@ header
 /* =================================
 メニュー
  ================================= */
- .top-menu {
+.top-menu {
   padding: 80px 12px;
   position: relative;
   max-width: 1500px;
   overflow: hidden;
 
-  @include tab{
+  @include tab {
     padding: 40px 12px 0;
   }
 
@@ -548,8 +542,8 @@ header
     width: 340px;
     z-index: -1;
 
-    @include pc{
-    display: none;
+    @include pc {
+      display: none;
     }
   }
 
@@ -560,9 +554,9 @@ header
     width: 340px;
     z-index: -1;
 
-    @include pc{
+    @include pc {
       display: none;
-      }
+    }
 
   }
 
@@ -579,7 +573,7 @@ header
     gap: 32px;
     flex-wrap: wrap;
 
-    @include tab{
+    @include tab {
       flex-direction: column;
       align-items: center;
       gap: 24px;
@@ -594,8 +588,8 @@ header
     position: relative;
     background-color: #fff;
 
-    @include tab{
-    width: 100%;
+    @include tab {
+      width: 100%;
     }
   }
 
@@ -619,610 +613,156 @@ header
   }
 
   &__item-img {
-position: absolute;
-top: 40%;
-left: 50%;
-transform: translate(-50%, -50%);
-z-index: 0;
-width: 25%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    width: 25%;
 
-&--02 {
-  width: 15%;
+    &--02 {
+      width: 15%;
 
-}
-  }
-
-
-}
-
-/* =================================
-地域とともに
- ================================= */
-
-.top-community {
-
-  &__ttl {
-    margin: 0 auto 40px;
-  }
-
-  &__text {
-    max-width: 620px;
-    margin: 0 auto 20px;
-
-    &:last-of-type {
-      margin: 0 auto 60px;
     }
   }
 
 
-}
-
-/* =================================
-最新の施工事例
- ================================= */
-
-.top-works {
-  overflow: hidden;
-
-  &__ttl {
-    position: relative;
-    margin: 200px auto 152px;
-
-    @include sp {
-      display: none;
-    }
-
-
-    &:before {
-      content: url(../img/top/top-works-ttl-bg.png);
-      z-index: -10;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-
-  }
-
-  &__ttl-sp {
-    display: none;
-
-    @include sp {
-      display: block;
-    }
-  }
-
-  &__content {
-    padding: 100px 12px 0;
-    display: flex;
-    gap: 24px;
-    flex-wrap: wrap;
-    justify-content: center;
-
-
-    @include tab {
-      padding: 60px 12px 0;
-
-    }
-
-  }
-
-  &__btn {}
-
-}
-
-
-
-.top-works-item {
-  width: calc((100% - 48px) / 3);
-  border: #000 solid 3px;
-  border-radius: 10px;
-  padding: 0 8px 12px;
-  margin: 0 0 60px;
-
-  @include pc {
-    width: calc((100% - 24px) / 2);
-  }
-
-  @include tab {
-    width: 100%;
-    max-width: 420px;
-  }
-
-  &__ttl-wrap {
-    width: 88%;
-    max-width: 300px;
-    margin: -60px auto 20px;
-  }
-
-  &__cat {
-    color: #fff;
-    padding: 2px;
-    background-color: #a3a3a3;
-
-
-    &--construction {
-      background-color: #f7931e;
-    }
-
-    &--civil {
-      background-color: #29abe2;
-    }
-
-    &--environmental {
-      background-color: #39b54a;
-    }
-  }
-
-  &__lead {
-    border: #dc0000 solid 2px;
-    position: relative;
-    padding: 4px 4px 4px 24px;
-    font-weight: bold;
-    font-size: 18px;
-    margin: -5px 0 0 0;
-    min-height: 72px;
-    background-color: #fff;
-    filter: drop-shadow(8px 6px 0px rgba(0, 0, 0, 0.1));
-
-    @include sp {
-      font-size: 16px;
-    }
-
-    &::before {
-      content: url(../img/top/top-works-square.png);
-      position: absolute;
-      top: 50%;
-      left: -20px;
-      transform: translateY(-50%);
-      filter: none;
-    }
-
-    &:after {
-      content: url(../img/top/top-works-triangle.png);
-      position: absolute;
-      bottom: -25px;
-      left: 0;
-    }
-  }
-
-  &__ttl {
-    color: #4d4d4d;
-    margin: 0 0 8px 16px;
-    font-size: 17px;
-
-    @include sp {
-      font-size: 16px;
-    }
-  }
-
-  &__img01 {
-    padding: 0 24px 0 0;
-    margin: 0 0 16px;
-    width: 350px;
-
-    @media screen and (max-width: 380px) {
-      width: 280px;
-    }
-
-    img {
-      overflow: hidden;
-    }
-  }
-
-  &__img02 {
-    padding: 0 0 0 24px;
-    margin: 0 0 16px;
-    width: 350px;
-
-    @include sp {
-      margin-left: auto;
-
-    }
-
-    @media screen and (max-width: 380px) {
-      width: 280px;
-    }
-
-    img {
-      overflow: hidden;
-    }
-  }
-
-  &__point {
-    max-width: 180px;
-    margin: -50px 0 4px;
-  }
-
-  &__point-ttl {
-    border-top: #dc0000 dotted 3px;
-    border-bottom: #dc0000 dotted 3px;
-    padding: 2px 4px;
-    color: #dc0000;
-    font-size: 16px;
-    margin: 0 0 8px;
-
-
-  }
-
-  &__point-text {
-    padding: 0 8px;
-    font-size: 13px;
-    line-height: 1.5;
-    color: #666666;
-  }
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
 }
 
 
 /* =================================
-お知らせ
+バナーセクション
  ================================= */
 
-.top-news {
-  overflow: hidden;
-  padding: 0 0 80px;
-
-  @include sp {
-    padding: 0 0 40px;
-
-  }
-
-  &__ttl {
-    position: relative;
-    margin: 240px auto 220px;
-    padding: 80px 0 0;
-
-    @include sp {
-      display: none;
-    }
-
-
-    &:before {
-      content: url(../img/top/top-news-ttl-bg.png);
-      z-index: -10;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-  }
-
-  &__ttl-sp {
-    display: none;
-
-    @include sp {
-      display: block;
-      margin: 40px 0;
-    }
-  }
-
-  &__content {
-    max-width: 1080px;
-    margin: 0 auto 60px !important;
-
-
-    .slick-prev {
-      left: -37px;
-      top: 30%;
-    }
-
-    .slick-next {
-      right: -25px;
-      top: 30%;
-    }
-
-  }
-
-  &__item {
-    margin: 0 12px;
-  }
-
-
-  &__cat {
-    background-color: #a3a3a3;
-    color: #fff;
-    padding: 0 2px;
-    display: inline-block;
-    margin: 0 0 8px;
-  }
-
-  &__img {
-    margin: 0 0 8px;
-  }
-
-  &__item-ttl {
-    font-weight: normal;
-    margin: 0 0 8px;
-    font-size: 17px;
-    line-height: 1.3;
-  }
-
-  &__time {
-    font-size: 14px;
-    display: block;
-    color: #a3a3a3;
-    position: relative;
-
-    &:after {
-      content: url(../img/top/top-news-arrow.png);
-      position: absolute;
-      top: 0;
-      right: 16px;
-      transform: scale(0.8);
-    }
-  }
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-
-
-}
-
-/* =================================
-ブログ
- ================================= */
-
-.top-blog {
-  background-image: url(../img/top/top-blog-bg.png);
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center top;
-  padding: 120px 0 80px;
-
+ .bnr-section {
+  background-color: #f8fbf2;
+  padding: 40px 12px;
 
   &__inner {
     display: flex;
-    align-items: flex-end;
     justify-content: center;
     gap: 60px;
+    align-items: center;
 
-
-    @include pc {
+    @include sp{
       flex-direction: column;
-      align-items: center;
-    }
-  }
+      gap: 24px;
 
-  &__ttl-wrap {
-    width: 300px;
-
-    @include sp {
-      width: 100%;
-      max-width: 300px;
-    }
-  }
-
-  &__ttl {
-    margin: 0 0 16px;
-    display: block;
-  }
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__content {
-    display: flex;
-    gap: 24px;
-
-    @include tab {
-      flex-direction: column;
-      align-items: center;
     }
   }
 
   &__item {
-    width: 380px;
 
-    @include sp {
-      width: 100%;
-      max-width: 380px;
+    @include sp{
+      max-width: 320px;    
     }
   }
 
-
-  &__item-lead {
-    font-size: 14px;
-    color: #535353;
-    margin: 0 0 12px;
-  }
-
-  &__img {
-    margin: 0 0 12px;
-  }
-
-  &__item-ttl {
-    font-weight: normal;
-    margin: 0 0 8px;
-    font-size: 17px;
-    line-height: 1.3;
-  }
-
-  &__time {
-    font-size: 14px;
-    display: block;
-    color: #a3a3a3;
-    position: relative;
-
-    &:after {
-      content: url(../img/top/top-news-arrow.png);
-      position: absolute;
-      top: 0;
-      right: 16px;
-      transform: scale(0.8);
-    }
-  }
-
-}
-
-/* =================================
-採用情報
- ================================= */
-
-.top-recruit {
-  background-image: url(../img/top/top-recruit-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center top;
-  max-width: 1360px;
-  padding: 0 0 44px;
-
-  @include tab {
-    background-color: #7f839a;
-    background-blend-mode: multiply;
-    background-image: url(../img/top/top-recruit-bg-sp.jpg);
-    padding: 0;
-
-  }
-
-  &__content {
-    width: 700px;
-    margin-left: auto;
-    padding: 40px 120px 40px 0;
-
-    @include tab {
-      width: 100%;
-      margin-left: auto;
-      padding: 40px 12px 40px;
-
-    }
-  }
-
-  &__ttl {
-    max-width: 380px;
-    margin: 0 auto 40px;
-  }
-
-  &__lead {
-    margin: 0 0 32px;
-  }
-
-  &__text {
-    color: #fff;
-    max-width: 330px;
-    margin: 0 auto 32px;
-  }
-
-  &__btn {}
-
   &__ {}
 
   &__ {}
 
   &__ {}
 
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
-
-  &__ {}
+ }
 
 
-}
 
 /* =================================
 footer
  ================================= */
 
 .footer {
-
-  &__btn-wrap {
-    padding: 80px 12px;
-
-    @include sp {
-      padding: 40px 12px;
-    }
-
-    &--works {
-      max-width: 1360px;
-      margin: 0 auto;
-      background-color: #f4f4f4;
-    }
-
-    &--contact {
-      display: none;
-    }
+  background-color: #44a136;
+  
+  &__top {
+    padding: 40px 12px;
+    
+    background-color: #44a136;
   }
-
-  &__btn {
-    display: block;
-    max-width: 560px;
+  
+  &__top-inner {
+    max-width: 300px;
     margin: 0 auto;
-
-    @include sp {
-      margin: 40px auto;
-
-    }
-  }
-
-  &__map-wrap {
-    max-width: 1360px;
-    margin: 0 auto;
-  }
-
-  &__map {
-    width: 100%;
-    height: 0;
     position: relative;
-    padding-top: 36.25%;
-    overflow: hidden;
+  }
 
-    iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+  &__ttl {
+    color: #fff;
+    font-size: 18px;
+    margin: 0 0 18px;
+    display: block;
+    span {
+      font-size: 80%;
+      display: block;
     }
   }
 
-  &__main {
-    background-image: url(../img/top/footer-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
-    max-width: 1360px;
-    margin: 0 auto;
-    padding: 24px 12px 240px;
+  &__address {
+    color: #fff;
+    font-size: 75%;
+  }
 
-    @include tab {
-      padding: 24px 12px 80px;
+  &__tel-wrap {
+    display: flex;
+    gap: 12px;
+    margin: 0 0 18px;
+  }
+
+  &__tel {
+    color: #fff;
+  }
+
+  &__fax {
+    color: #fff;
+  }
+
+  &__link-wrap {
+    display: flex;
+    gap: 16px;
+
+  }
+
+
+  &__link-item {
+    color: #fff;
+
+  }
+
+  &__top-btn {
+position: absolute;
+right: -100px;
+top: 50%;
+transform: translateY(-50%);
+    cursor: pointer;
+
+    @include pc {
+      right: 20px;
+      bottom: -46px;
+    }
+
+
+
+    @include sp {
+      bottom: -63px;
+      right: 2px;
+
 
     }
+
   }
+
+  &__ {}
+
+  
+  
 
   &__bottom {
     text-align: center;
     font-size: 11px;
     padding: 8px;
+    background-color: #fff;
+    color: #44a136;
   }
 
   &__ {}
