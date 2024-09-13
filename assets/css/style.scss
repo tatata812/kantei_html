@@ -280,7 +280,7 @@ header
     width: 340px;
     z-index: -1;
 
-    @include tab{
+    @include pc{
     display: none;
     }
   }
@@ -292,7 +292,7 @@ header
     width: 340px;
     z-index: -1;
 
-    @include tab{
+    @include pc{
       display: none;
       }
 
