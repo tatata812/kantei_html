@@ -1095,7 +1095,7 @@ header
 .header-sp.active {
   opacity: 1;
   transition: all 0.3s;
-  transform: translate(0, 5px);
+  transform: translate(0, 3px);
   z-index: 999;
 }
 .header-sp__inner {
