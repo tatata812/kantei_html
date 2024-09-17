@@ -23,7 +23,7 @@
 }
 
 body {
-  font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   line-height: 1.8;
   color: #333333;
 
@@ -114,93 +114,42 @@ table {
     color: #44a136;
     font-size: 22px;
 
-    @include sp{
+    @include sp {
       font-size: 20px;
-
+      text-align: center;
     }
 
     span {
-font-size: 60%;
-vertical-align: middle;
+      font-size: 60%;
+      vertical-align: middle;
     }
-    
+
   }
 }
 
 // 下層ページ共通
 
-.main-top {
-
-  &__ttl-wrap {
-    max-width: 1360px;
-    margin: 0 auto;
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center top;
-    position: relative;
-    padding: 120px 0 80px;
-
-    @include tab {
-      padding: 60px 0 20px;
-    }
-
-
-    &--company {
-      background-image: url(../img/subpage/main-top-company.jpg);
-    }
-
-    &--works {
-      background-image: url(../img/subpage/main-top-works.jpg);
-    }
-
-    &--contact {
-      background-image: url(../img/subpage/main-top-contact.jpg);
-    }
-
-    &--recruit {
-      background-image: url(../img/subpage/main-top-recruit.jpg);
-    }
-
-  }
+.page-style {
 
   &__ttl {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-    color: #fff;
-    font-size: clamp(1.25rem, 0.62rem + 3.15vw, 3.375rem);
-    white-space: nowrap;
-    letter-spacing: 0.5rem;
+      color: #44a136;
+      font-size: 22px;
+  
+      @include sp {
+        font-size: 20px;
+        text-align: center;
+  
+      }
+  
+      span {
+        font-size: 80%;
+        vertical-align: middle;
+      }
+  
+    }
+  
+  
   }
-
-  &__breadcrumb-wrap {
-    max-width: 1360px;
-    margin: 0 auto;
-    padding: 2px 12px;
-    font-size: 13px;
-    color: #545454;
-  }
-
-}
-
-// 下層タイトル
-
-.sub-page-ttl {
-  position: relative;
-  padding: 0 8px 2px;
-  border-bottom: 2px solid #b3b3b3;
-
-  &:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    width: 80px;
-    height: inherit;
-    border-bottom: 2px solid #dc0000;
-  }
-}
 
 // ボタン
 
@@ -318,7 +267,7 @@ vertical-align: middle;
     color: #0b5394;
     font-weight: bold;
 
-    @include sp{
+    @include sp {
       font-size: 20px;
     }
   }
@@ -326,7 +275,8 @@ vertical-align: middle;
   h3 {
     font-size: 20px;
     margin: 24px 0 16px;
-    @include sp{
+
+    @include sp {
       font-size: 18px;
     }
 

@@ -270,17 +270,17 @@ header
 不動産鑑定士協会について
  ================================= */
 .top-about {
-  padding: 80px 12px 180px;
+  padding: 80px 20px 180px;
   position: relative;
   max-width: 1400px;
   overflow: hidden;
 
   @include tab {
-    padding: 100px 12px 150px;
+    padding: 100px 20px 150px;
   }
 
   @include sp {
-    padding: 100px 12px 100px;
+    padding: 100px 20px 100px;
 
   }
 
