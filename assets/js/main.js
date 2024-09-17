@@ -33,13 +33,13 @@ $(function () {
   });
 
 
-// ハンバーガーメニュー
-$(function () {
-  $('#js-hamburger-menu, .navigation__link').on('click', function () {
-    $('.navigation').slideToggle(500)
-    $('.hamburger-menu').toggleClass('hamburger-menu--open')
+  // ハンバーガーメニュー
+  $(function () {
+    $('#js-hamburger-menu, .navigation__link').on('click', function () {
+      $('.navigation').slideToggle(500)
+      $('.hamburger-menu').toggleClass('hamburger-menu--open')
+    });
   });
-});
 
 
 
@@ -98,6 +98,20 @@ $(function () {
       }
     });
   });
+
+
+  $(function(){
+    var headerHeight = 40; // ヘッダーの高さ
+    $('a[href^="#"]').click(function(){
+        var speed = 500;
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top - headerHeight;
+        $("html, body").animate({scrollTop:position}, speed, "swing");
+        return false;
+    });
+});
+
 })
 
 // パララックス

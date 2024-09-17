@@ -132,24 +132,20 @@ table {
 .page-style {
 
   &__ttl {
-      color: #44a136;
-      font-size: 22px;
-  
-      @include sp {
-        font-size: 20px;
-        text-align: center;
-  
-      }
-  
-      span {
-        font-size: 80%;
-        vertical-align: middle;
-      }
-  
+    color: #44a136;
+    font-size: 22px;
+
+    @include sp {
+      font-size: 20px;
+      text-align: center;
     }
-  
-  
+
+    span {
+      font-size: 80%;
+      vertical-align: middle;
+    }
   }
+}
 
 // ボタン
 
@@ -201,6 +197,72 @@ table {
     }
   }
 
+}
+
+// テーブル
+.table-style {
+  width: 100%;
+	border-collapse: collapse;
+  border-bottom: 1px solid #44a136;
+
+
+  th {
+    border-top: 1px solid #44a136;
+    vertical-align: middle;
+    color: #44a136;
+    padding: 12px 12px 12px 40px;
+    text-align: left;
+
+    @include sp{
+      padding: 8px 12px 8px 12px;
+    }
+
+  }
+
+  td {
+    border-top: 1px solid #44a136;
+	border-collapse: collapse;
+  padding: 12px 12px 12px 0;
+
+  }
+}
+
+
+// 両側背景
+.sides-bg {
+position: relative;
+
+&:before {
+  content: "";
+    position: absolute;
+    width: 280px;
+    top: 50px;
+    height: 100%;
+    left: 20px;
+    background: url(../img/subpage/sides-bg-left.png) repeat-y left top;
+    background-size: 280px auto;
+    z-index: -1;
+
+    @include tab{
+    display: none;
+    }
+}
+
+&:after {
+  content: "";
+    position: absolute;
+    top: 50px;
+    width: 280px;
+    height: 100%;
+    right: 20px;
+    background: url(../img/subpage/sides-bg-right.png) repeat-y left top;
+    background-size: 280px auto;
+    z-index: -1;
+
+    @include tab{
+      display: none;
+      }
+}
 }
 
 // Slick設定
