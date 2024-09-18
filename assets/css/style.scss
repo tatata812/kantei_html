@@ -661,7 +661,7 @@ header
   }
 
   &__item {
-
+    max-width: 320px;  
     @include sp{
       max-width: 320px;    
     }

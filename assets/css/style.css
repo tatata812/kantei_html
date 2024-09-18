@@ -1418,6 +1418,9 @@ header
     gap: 24px;
   }
 }
+.bnr-section__item {
+  max-width: 320px;
+}
 @media (max-width: 600px) {
   .bnr-section__item {
     max-width: 320px;
