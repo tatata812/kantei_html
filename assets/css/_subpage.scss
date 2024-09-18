@@ -31,9 +31,6 @@
   }
 
 
-
-
-
   &__wrap {
     max-width: 1200px;
     margin: 0 auto;
@@ -64,7 +61,6 @@
     @include sp {
       bottom: -70px;
       width: 100%;
-
     }
   }
 
@@ -79,13 +75,19 @@
 
     @include pc {
       left: 5%;
-
     }
 
-
-
     @include tab {
-      display: none;
+      min-width: 220px;
+      bottom: -20px;
+      filter: opacity(30%);
+    }
+
+    @include sp {
+      min-width: 180px;
+      bottom: -38px;
+          left: 1%;
+
     }
   }
 
