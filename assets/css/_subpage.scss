@@ -670,6 +670,97 @@
 }
 
 
+
+/* =================================
+アクセス
+ ================================= */
+
+ .page-access {
+
+  &__ttl {
+    max-width: 1220px;
+    margin: 0 auto;
+    font-size: 22px;
+    color: #44a136;
+    padding: 12px 12px 12px 60px;
+
+    @include tab {
+      font-size: 20px;
+      padding: 10px 12px 10px 24px;
+
+
+    }
+  }
+
+  &__section {
+    padding: 0px 20px 20px;
+
+  }
+
+  &__section-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  &__text {
+    margin: 0 0 24px;
+  }
+
+  &__map-wrap {
+    width: 100%;
+    margin: 0 auto 160px;
+    position: relative;
+
+    @include tab{
+      margin: 0 auto 100px;
+
+    }
+  }
+
+  &__map {
+    width: 100%;
+    height: 0;
+    position: relative;
+    padding-top: 56.25%;
+    overflow: hidden;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__bottom-img {
+    width: 90%;
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+
+
+    @include tab {
+      width: 90%;
+      bottom: -100px;
+
+    }
+
+    @include sp {
+      bottom: -70px;
+      width: 100%;
+
+    }
+  }
+
+  &__ {}
+
+
+}
+
+
 /* =================================
 
  ================================= */
