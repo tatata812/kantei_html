@@ -154,6 +154,16 @@
 
 .sub-page {
 
+  hr {
+    border-top: 1px solid #44a136;
+    margin: 40px 0;
+
+    @include sp{
+      margin: 24px 0;
+
+    }
+  }
+
   &__ttl {
     max-width: 1220px;
     margin: 0 auto;
@@ -179,14 +189,14 @@
 
 
 
-    @include pc{
+    @include pc {
       width: 220px;
       right: 30px;
       bottom: -100px;
 
     }
 
-    @include tab{
+    @include tab {
       filter: opacity(30%);
       width: 160px;
       right: 10px;
@@ -210,8 +220,8 @@
     max-width: 1100px;
     margin: 0 auto 32px;
     z-index: 2;
-position: relative;
-padding: 0 8px;
+    position: relative;
+    padding: 0 8px;
   }
 
   &__section-inner {
@@ -222,6 +232,16 @@ padding: 0 8px;
     border-radius: 12px;
 
 
+    @include pc{
+      padding: 52px;
+    }
+
+    @include tab{
+      padding: 24px 12px;
+
+    }
+
+
   }
 
   &__h2 {
@@ -230,6 +250,12 @@ padding: 0 8px;
     border-bottom: 3px solid #e3e3e3;
     position: relative;
     padding: 0 0 4px;
+    margin: 0 0 24px;
+
+    @include sp{
+      font-size: 17px;
+
+    }
 
     &:before {
       content: "";
@@ -241,1079 +267,1142 @@ padding: 0 8px;
       border-bottom: 3px solid #44a136;
     }
   }
+
+  &__content {
+    padding: 0 40px;
+
+    @include sp{
+      padding: 0 12px;
+
+    }
+  }
+
+  &__link-mark {
+    position: relative;
+    color: #158ecf;
+    margin: 0 0 0 50px;
+    white-space: nowrap;
+    
+      &:before {
+        content: url(../img/subpage/link-mark02.png);
+        position: absolute;
+        top: -13px;
+        left: -38px;
+        transform: scale(0.5);
+      }
+  
+  
+    
+  }
 }
 
 
 
 
 
-  /* =================================
+/* =================================
 協会概要
  ================================= */
 
-  .page-overview {
+.page-overview {
 
-    &__section {
-      background-color: #f8fbf2;
-      padding: 60px 12px;
+  &__section {
+    background-color: #f8fbf2;
+    padding: 60px 12px;
+
+    @include sp {
+      padding: 40px 12px;
+
+    }
+  }
+
+  &__content {
+    background-color: #fff;
+    max-width: 680px;
+    margin: 0 auto 60px;
+    padding: 32px;
+    border-radius: 16px;
+
+    &:last-child {
+      margin: 0 auto;
+    }
+
+    @include sp {
+      padding: 24px 12px;
+      margin: 0 auto 40px;
+
+    }
+  }
+
+  &__content-ttl {
+    margin: 0 0 24px;
+  }
+
+  &__text {
+    margin: 0 0 24px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  &__table {
+    th {
 
       @include sp {
-        padding: 40px 12px;
-
+        width: 120px;
       }
     }
+  }
 
-    &__content {
-      background-color: #fff;
-      max-width: 680px;
-      margin: 0 auto 60px;
-      padding: 32px;
-      border-radius: 16px;
+  &__list {
+    border-top: 1px solid #44a136;
+    border-bottom: 1px solid #44a136;
+    padding: 24px 0;
+    padding-left: 3.5em;
+    /* サイトに合せて調整 */
 
-      &:last-child {
-        margin: 0 auto;
-      }
-
-      @include sp {
-        padding: 24px 12px;
-        margin: 0 auto 40px;
-
-      }
-    }
-
-    &__content-ttl {
-      margin: 0 0 24px;
-    }
-
-    &__text {
-      margin: 0 0 24px;
-
-      &:last-child {
-        margin: 0;
-      }
-    }
-
-    &__table {
-      th {
-
-        @include sp {
-          width: 120px;
-        }
-      }
-    }
-
-    &__list {
-      border-top: 1px solid #44a136;
-      border-bottom: 1px solid #44a136;
-      padding: 24px 0;
-      padding-left: 3.5em;
+    @include sp {
+      padding: 12px 0;
+      padding-left: 1.5em;
       /* サイトに合せて調整 */
-
-      @include sp {
-        padding: 12px 0;
-        padding-left: 1.5em;
-        /* サイトに合せて調整 */
-      }
-
     }
-
-    &__list-item {
-      margin: 0 12px 6px;
-      counter-increment: cnt;
-
-      &:before {
-        content: "("counter(cnt) ") ";
-        margin-left: -1.8em;
-        /* サイトに合せて調整 */
-        width: 1.8em;
-        /* サイトに合せて調整 */
-      }
-    }
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
 
   }
 
-  /* =================================
+  &__list-item {
+    margin: 0 12px 6px;
+    counter-increment: cnt;
+
+    &:before {
+      content: "("counter(cnt) ") ";
+      margin-left: -1.8em;
+      /* サイトに合せて調整 */
+      width: 1.8em;
+      /* サイトに合せて調整 */
+    }
+  }
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+
+}
+
+/* =================================
 不動産鑑定士とは
  ================================= */
 
-  .page-about {
+.page-about {
 
-    &__section {
-      max-width: 1600px;
+  &__section {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 60px 12px;
+
+    @include sp {
+      padding: 0px 12px 40px;
+
+    }
+  }
+
+  &__content {
+    background-color: #fff;
+    max-width: 780px;
+    margin: 0 auto 20px;
+    padding: 32px;
+
+    &:last-child {
       margin: 0 auto;
-      padding: 60px 12px;
-
-      @include sp {
-        padding: 0px 12px 40px;
-
-      }
     }
 
-    &__content {
-      background-color: #fff;
-      max-width: 780px;
-      margin: 0 auto 20px;
-      padding: 32px;
-
-      &:last-child {
-        margin: 0 auto;
-      }
-
-      @include sp {
-        padding: 0 12px;
-        margin: 0 auto 40px;
-
-      }
-    }
-
-    &__content-ttl {
-      margin: 0 0 8px;
-    }
-
-    &__box {
-      display: flex;
-      gap: 24px;
-
-      @include sp {
-        flex-direction: column-reverse;
-        align-items: center;
-        gap: 12px;
-
-      }
-    }
-
-    &__left {
-      width: 360px;
-
-      @include tab {
-        width: 240px;
-      }
-
-      @include sp {
-        width: 100%;
-        max-width: 400px;
-      }
-    }
-
-    &__right {
-      position: relative;
-      flex: 1;
-      border-top: 1px solid #44a136;
-      border-bottom: 1px solid #44a136;
-      padding: 8px 4px;
-
+    @include sp {
+      padding: 0 12px;
+      margin: 0 auto 40px;
 
     }
+  }
 
-    &__right-text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+  &__content-ttl {
+    margin: 0 0 8px;
+  }
+
+  &__box {
+    display: flex;
+    gap: 24px;
+
+    @include sp {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 12px;
+
+    }
+  }
+
+  &__left {
+    width: 360px;
+
+    @include tab {
+      width: 240px;
+    }
+
+    @include sp {
       width: 100%;
-      font-size: 16px;
-
-      @include tab {
-        font-size: 13px;
-      }
-
-      @include sp {
-        position: static;
-        transform: translate(0, 0);
-
-      }
+      max-width: 400px;
     }
+  }
 
-    &__ {}
+  &__right {
+    position: relative;
+    flex: 1;
+    border-top: 1px solid #44a136;
+    border-bottom: 1px solid #44a136;
+    padding: 8px 4px;
 
-    &__ {}
 
   }
 
+  &__right-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    font-size: 16px;
 
-  /* =================================
+    @include tab {
+      font-size: 13px;
+    }
+
+    @include sp {
+      position: static;
+      transform: translate(0, 0);
+
+    }
+  }
+
+
+}
+
+
+/* =================================
 不動産鑑定士になるには
  ================================= */
 
-  .page-license {
+.page-license {
 
-    &__section {
-      max-width: 1600px;
-      margin: 0 auto;
-      padding: 60px 12px;
+  &__section {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 60px 12px;
 
-      @include sp {
-        padding: 0px 12px 40px;
-
-      }
-    }
-
-    &__content {
-      background-color: #fff;
-      max-width: 780px;
-      margin: 0 auto 20px;
-      padding: 32px;
-
-      &:last-child {
-        margin: 0 auto;
-      }
-
-      @include sp {
-        padding: 0 12px;
-        margin: 0 auto 40px;
-
-      }
-    }
-
-    &__content-ttl {
-      margin: 0 0 8px;
-    }
-
-    &__box {
-      display: flex;
-      gap: 24px;
-      margin: 0 0 60px;
-
-      @include sp {
-        flex-direction: column-reverse;
-        align-items: center;
-        gap: 12px;
-
-      }
-    }
-
-    &__left {
-      width: 360px;
-
-      @include tab {
-        width: 240px;
-      }
-
-      @include sp {
-        width: 100%;
-        max-width: 400px;
-      }
-    }
-
-    &__right {
-      flex: 1;
-      padding: 8px 4px;
-
+    @include sp {
+      padding: 0px 12px 40px;
 
     }
+  }
 
-    &__right-text {
-      margin: 0 0 46px;
+  &__content {
+    background-color: #fff;
+    max-width: 780px;
+    margin: 0 auto 20px;
+    padding: 32px;
 
-      @include tab {
-        margin: 0 0 24px;
-
-      }
-
-
-    }
-
-    &__right-link {
-      color: #44a136;
-      position: relative;
-      margin: 0 0 0 50px;
-      white-space: nowrap;
-
-      &:before {
-        content: url(../img/subpage/link-mark.png);
-        position: absolute;
-        top: -35px;
-        left: -64px;
-        transform: scale(0.4);
-      }
-    }
-
-    &__table-wrap {
-      max-width: 600px;
+    &:last-child {
       margin: 0 auto;
     }
 
-    &__table-ttl {
-      color: #44a136;
-      margin: 0 0 8px;
-      font-size: 17px;
-    }
-
-    &__table {
-      margin: 0 0 60px;
-
-      @include sp {
-        margin: 0 0 40px;
-
-      }
+    @include sp {
+      padding: 0 12px;
+      margin: 0 auto 40px;
 
     }
+  }
 
-    &__td {
-      padding: 12px 32px 12px 32px !important;
+  &__content-ttl {
+    margin: 0 0 8px;
+  }
 
-      @include sp {
-        padding: 12px 12px 12px 12px !important;
+  &__box {
+    display: flex;
+    gap: 24px;
+    margin: 0 0 60px;
 
-      }
+    @include sp {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 12px;
+
+    }
+  }
+
+  &__left {
+    width: 360px;
+
+    @include tab {
+      width: 240px;
     }
 
-    &__last-text {}
-
-    &__last-text-link {
-      color: #158ecf;
-      text-decoration: underline;
+    @include sp {
+      width: 100%;
+      max-width: 400px;
     }
+  }
 
-    &__ {}
+  &__right {
+    flex: 1;
+    padding: 8px 4px;
+
 
   }
 
+  &__right-text {
+    margin: 0 0 46px;
 
-  /* =================================
+    @include tab {
+      margin: 0 0 24px;
+
+    }
+
+
+  }
+
+  &__right-link {
+    color: #44a136;
+    position: relative;
+    margin: 0 0 0 50px;
+    white-space: nowrap;
+
+    &:before {
+      content: url(../img/subpage/link-mark.png);
+      position: absolute;
+      top: -35px;
+      left: -64px;
+      transform: scale(0.4);
+    }
+  }
+
+  &__table-wrap {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  &__table-ttl {
+    color: #44a136;
+    margin: 0 0 8px;
+    font-size: 17px;
+  }
+
+  &__table {
+    margin: 0 0 60px;
+
+    @include sp {
+      margin: 0 0 40px;
+
+    }
+
+  }
+
+  &__td {
+    padding: 12px 32px 12px 32px !important;
+
+    @include sp {
+      padding: 12px 12px 12px 12px !important;
+
+    }
+  }
+
+  &__last-text {}
+
+  &__last-text-link {
+    color: #158ecf;
+    text-decoration: underline;
+  }
+
+  &__ {}
+
+}
+
+
+/* =================================
 お問い合わせ
  ================================= */
 
-  .page-contact {
+.page-contact {
 
-    &__ttl {
-      max-width: 1220px;
-      margin: 0 auto;
-      font-size: 22px;
+  &__ttl {
+    max-width: 1220px;
+    margin: 0 auto;
+    font-size: 22px;
+    color: #44a136;
+    padding: 12px 12px 12px 60px;
+
+    @include tab {
+      font-size: 20px;
+      padding: 10px 12px 10px 24px;
+
+
+    }
+  }
+
+  &__section {
+    background-color: #f8fbf2;
+    padding: 40px 12px 80px;
+
+    @include sp {
+      padding: 40px 12px;
+
+    }
+  }
+
+  &__section-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  &__text {
+    margin: 0 0 40px;
+
+    span {
+      color: #ed1c24;
+    }
+  }
+
+  &__form-wrap {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 40px;
+    margin: 0 0 40px;
+
+    @include tab {
+      padding: 12px;
+    }
+  }
+
+  &__form-table {
+    width: 100%;
+
+    th {
+      text-align: left;
       color: #44a136;
-      padding: 12px 12px 12px 60px;
+      padding: 8px 0 24px;
+      width: 280px;
+      vertical-align: top;
+
+      @include pc {
+        width: 180px;
+      }
 
       @include tab {
-        font-size: 20px;
-        padding: 10px 12px 10px 24px;
+        width: 100%;
+        display: block;
+        padding: 16px 0 2px;
 
 
       }
-    }
-
-    &__section {
-      background-color: #f8fbf2;
-      padding: 40px 12px 80px;
-
-      @include sp {
-        padding: 40px 12px;
-
-      }
-    }
-
-    &__section-inner {
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-
-    &__text {
-      margin: 0 0 40px;
 
       span {
         color: #ed1c24;
+        display: inline-block;
+        margin: 0 0 0 8px;
       }
     }
 
-    &__form-wrap {
-      background-color: #fff;
-      border-radius: 12px;
-      padding: 40px;
-      margin: 0 0 40px;
-
+    td {
       @include tab {
-        padding: 12px;
+        width: 100%;
+        display: block;
       }
     }
+  }
 
-    &__form-table {
-      width: 100%;
+  &__input {
+    border: #44a136 1px solid;
+    width: 100%;
+    padding: 8px;
 
-      th {
-        text-align: left;
-        color: #44a136;
-        padding: 8px 0 24px;
-        width: 280px;
-        vertical-align: top;
+  }
 
-        @include pc {
-          width: 180px;
-        }
+  &__textarea {
+    border: #44a136 1px solid;
+    width: 100%;
+    padding: 8px;
 
-        @include tab {
-          width: 100%;
-          display: block;
-          padding: 16px 0 2px;
+  }
 
+  &__bottom-text {
+    text-align: center;
+    margin: 0 0 12px;
+  }
 
-        }
+  &__last-text-link {
+    color: #158ecf;
+    text-decoration: underline;
+  }
 
-        span {
-          color: #ed1c24;
-          display: inline-block;
-          margin: 0 0 0 8px;
-        }
-      }
+  &__checkbox-wrap {
+    text-align: center;
+    margin: 0 0 40px;
 
-      td {
-        @include tab {
-          width: 100%;
-          display: block;
-        }
-      }
+    label {
+      color: #44a136;
+    }
+  }
+
+  &__checkbox {}
+
+  &__btn-wrap {
+    position: relative;
+    width: 200px;
+
+    &::after {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border: 0;
+      border-top: 2px solid #fff;
+      border-right: 2px solid #fff;
+      transform: rotate(45deg);
+      position: absolute;
+      top: 50%;
+      right: 25px;
+      margin-top: -6px;
     }
 
-    &__input {
-      border: #44a136 1px solid;
-      width: 100%;
-      padding: 8px;
+  }
 
-    }
-
-    &__textarea {
-      border: #44a136 1px solid;
-      width: 100%;
-      padding: 8px;
-
-    }
-
-    &__bottom-text {
-      text-align: center;
-      margin: 0 0 12px;
-    }
-
-    &__last-text-link {
-      color: #158ecf;
-      text-decoration: underline;
-    }
-
-    &__checkbox-wrap {
-      text-align: center;
-      margin: 0 0 40px;
-
-      label {
-        color: #44a136;
-      }
-    }
-
-    &__checkbox {}
-
-    &__btn-wrap {
-      position: relative;
-      width: 200px;
-
-      &::after {
-        content: "";
-        width: 8px;
-        height: 8px;
-        border: 0;
-        border-top: 2px solid #fff;
-        border-right: 2px solid #fff;
-        transform: rotate(45deg);
-        position: absolute;
-        top: 50%;
-        right: 25px;
-        margin-top: -6px;
-      }
-
-    }
-
-    &__btn {
-      width: 200px;
-    }
-
-
-
+  &__btn {
+    width: 200px;
   }
 
 
 
-  /* =================================
+}
+
+
+
+/* =================================
 アクセス
  ================================= */
 
-  .page-access {
+.page-access {
 
-    &__ttl {
-      max-width: 1220px;
-      margin: 0 auto;
-      font-size: 22px;
-      color: #44a136;
-      padding: 12px 12px 12px 60px;
+  &__ttl {
+    max-width: 1220px;
+    margin: 0 auto;
+    font-size: 22px;
+    color: #44a136;
+    padding: 12px 12px 12px 60px;
 
-      @include tab {
-        font-size: 20px;
-        padding: 10px 12px 10px 24px;
+    @include tab {
+      font-size: 20px;
+      padding: 10px 12px 10px 24px;
 
-
-      }
-    }
-
-    &__section {
-      padding: 0px 20px 20px;
-
-      @include sp {
-        padding: 0px 20px;
-
-      }
 
     }
+  }
 
-    &__section-inner {
-      max-width: 1100px;
-      margin: 0 auto;
+  &__section {
+    padding: 0px 20px 20px;
+
+    @include sp {
+      padding: 0px 20px;
+
     }
-
-    &__text {
-      margin: 0 0 24px;
-    }
-
-    &__map-wrap {
-      width: 100%;
-      margin: 0 auto 160px;
-      position: relative;
-
-      @include tab {
-        margin: 0 auto 100px;
-
-      }
-    }
-
-    &__map {
-      width: 100%;
-      height: 0;
-      position: relative;
-      padding-top: 40.25%;
-      overflow: hidden;
-
-      @include sp {
-        padding-top: 54.25%;
-
-      }
-
-      iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-      }
-    }
-
-    &__bottom-img {
-      width: 90%;
-      position: absolute;
-      bottom: -100px;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 1;
-
-
-      @include tab {
-        width: 90%;
-        bottom: -100px;
-
-      }
-
-      @include sp {
-        bottom: -70px;
-        width: 100%;
-
-      }
-    }
-
-    &__ {}
-
 
   }
 
-  /* =================================
+  &__section-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  &__text {
+    margin: 0 0 24px;
+  }
+
+  &__map-wrap {
+    width: 100%;
+    margin: 0 auto 160px;
+    position: relative;
+
+    @include tab {
+      margin: 0 auto 100px;
+
+    }
+  }
+
+  &__map {
+    width: 100%;
+    height: 0;
+    position: relative;
+    padding-top: 40.25%;
+    overflow: hidden;
+
+    @include sp {
+      padding-top: 54.25%;
+
+    }
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__bottom-img {
+    width: 90%;
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+
+
+    @include tab {
+      width: 90%;
+      bottom: -100px;
+
+    }
+
+    @include sp {
+      bottom: -70px;
+      width: 100%;
+
+    }
+  }
+
+  &__ {}
+
+
+}
+
+/* =================================
 パンフレット不動産鑑定士やまぐち
  ================================= */
 
-  .page-pamphlet {
+.page-pamphlet {
 
-    &__ttl {
-      max-width: 1220px;
-      margin: 0 auto;
-      font-size: 22px;
-      color: #44a136;
-      padding: 12px 12px 12px 60px;
+  &__ttl {
+    max-width: 1220px;
+    margin: 0 auto;
+    font-size: 22px;
+    color: #44a136;
+    padding: 12px 12px 12px 60px;
 
-      @include tab {
-        font-size: 20px;
-        padding: 10px 12px 10px 24px;
+    @include tab {
+      font-size: 20px;
+      padding: 10px 12px 10px 24px;
 
 
+    }
+  }
+
+  &__section {
+    background-color: #f8fbf2;
+    padding: 40px 12px 80px;
+
+    @include sp {
+      padding: 40px 12px;
+
+    }
+  }
+
+  &__section-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+}
+
+
+/* =================================
+パンフレット「不動産鑑定士やまぐち」
+ ================================= */
+
+.page-pamphlet {
+
+  &__flex {
+  display: flex;
+  gap: 48px;
+  align-items: center;
+
+  @include tab{
+         flex-direction: column;
+        gap: 12px;
+
+  }
+  }
+
+  &__left {
+  width: 240px;
+  }
+
+  &__right {
+  flex: 1;
+  color: #44a136;
+
+    @include sp{
+  text-align: center;
+  font-size: 14px;
+  }
+  }
+
+  &__link-mark {
+
+
+@media screen and (max-width: 480px) {
+margin: 0 0 0 30px;
+}
+  }
+
+  &__back-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 500px;
+  margin: 0 auto;
+      justify-content: space-between;
+      gap: 12px;
+
+      @include sp{
+      justify-content: center;
       }
-    }
-
-    &__section {
-      background-color: #f8fbf2;
-      padding: 40px 12px 80px;
-
-      @include sp {
-        padding: 40px 12px;
-
-      }
-    }
-
-    &__section-inner {
-      max-width: 1100px;
-      margin: 0 auto;
-    }
 
   }
 
+  &__back {
+  }
 
-  /* =================================
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+
+}
+
+/* =================================
 
  ================================= */
 
-  .aaa {
+.aaa {
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
-
-
-  }
-
-  /* =================================
-
- ================================= */
-
-  .aaa {
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
+  &__ {}
 
 
-  }
+}
 
-  /* =================================
+/* =================================
 
  ================================= */
 
-  .aaa {
+.aaa {
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
-
-
-  }
-
-  /* =================================
-
- ================================= */
-
-  .aaa {
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
+  &__ {}
 
 
-  }
+}
 
-  /* =================================
+/* =================================
 
  ================================= */
 
-  .aaa {
+.aaa {
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
-
-
-  }
-
-  /* =================================
-
- ================================= */
-
-  .aaa {
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
+  &__ {}
 
 
-  }
+}
 
-  /* =================================
+/* =================================
 
  ================================= */
 
-  .aaa {
+.aaa {
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
-
-
-  }
-
-  /* =================================
-
- ================================= */
-
-  .aaa {
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
-
-    &__ {}
+  &__ {}
 
 
-  }
+}
 
-  /* =================================
+/* =================================
 
  ================================= */
 
-  .aaa {
+.aaa {
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
 
-  }
+}
 
-  /* =================================
+/* =================================
 
  ================================= */
 
-  .aaa {
+.aaa {
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
-    &__ {}
+  &__ {}
 
 
-  }
+}
+
+/* =================================
+
+ ================================= */
+
+.aaa {
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+
+}
+
+/* =================================
+
+ ================================= */
+
+.aaa {
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+
+}
+
+/* =================================
+
+ ================================= */
+
+.aaa {
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+  &__ {}
+
+
+}
