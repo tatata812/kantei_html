@@ -536,6 +536,10 @@ table {
   left: -38px;
   transform: scale(0.5);
 }
+.sub-page__link {
+  color: #158ecf;
+  text-decoration: underline;
+}
 
 /* =================================
 協会概要
@@ -1079,8 +1083,51 @@ table {
   }
 }
 /* =================================
-
+出前講座
  ================================= */
+.page-delivery hr {
+  border-top: 1px solid #44a136;
+  margin: 24px 0;
+}
+@media (max-width: 600px) {
+  .page-delivery hr {
+    margin: 24px 0;
+  }
+}
+.page-delivery__h2 {
+  color: #44a136;
+  font-size: 18px;
+  margin: 0 0 8px;
+}
+.page-delivery__text {
+  margin: 0 0 0 40px;
+}
+@media (max-width: 600px) {
+  .page-delivery__text {
+    margin: 0;
+    padding: 0 8px;
+  }
+}
+.page-delivery__list {
+  margin: 12px 0 0 64px;
+}
+@media (max-width: 600px) {
+  .page-delivery__list {
+    margin: 12px 0 0 0;
+    padding: 0 18px;
+  }
+}
+.page-delivery__list li {
+  padding-left: 1.3em;
+  text-indent: -1.3em;
+}
+.page-delivery__contact {
+  text-align: center;
+  margin: 40px 0 0;
+}
+.page-delivery__contact span {
+  font-weight: bold;
+}
 /* =================================
 
  ================================= */

@@ -158,7 +158,7 @@
     border-top: 1px solid #44a136;
     margin: 40px 0;
 
-    @include sp{
+    @include sp {
       margin: 24px 0;
 
     }
@@ -232,11 +232,11 @@
     border-radius: 12px;
 
 
-    @include pc{
+    @include pc {
       padding: 52px;
     }
 
-    @include tab{
+    @include tab {
       padding: 24px 12px;
 
     }
@@ -252,7 +252,7 @@
     padding: 0 0 4px;
     margin: 0 0 24px;
 
-    @include sp{
+    @include sp {
       font-size: 17px;
 
     }
@@ -271,7 +271,7 @@
   &__content {
     padding: 0 40px;
 
-    @include sp{
+    @include sp {
       padding: 0 12px;
 
     }
@@ -282,18 +282,23 @@
     color: #158ecf;
     margin: 0 0 0 50px;
     white-space: nowrap;
-    
-      &:before {
-        content: url(../img/subpage/link-mark02.png);
-        position: absolute;
-        top: -13px;
-        left: -38px;
-        transform: scale(0.5);
-      }
-  
-  
-    
+
+    &:before {
+      content: url(../img/subpage/link-mark02.png);
+      position: absolute;
+      top: -13px;
+      left: -38px;
+      transform: scale(0.5);
+    }
+
+
+
   }
+
+  &__link {
+    color: #158ecf;
+  text-decoration: underline;
+}
 }
 
 
@@ -945,55 +950,54 @@
 .page-pamphlet {
 
   &__flex {
-  display: flex;
-  gap: 48px;
-  align-items: center;
+    display: flex;
+    gap: 48px;
+    align-items: center;
 
-  @include tab{
-         flex-direction: column;
-        gap: 12px;
+    @include tab {
+      flex-direction: column;
+      gap: 12px;
 
-  }
+    }
   }
 
   &__left {
-  width: 240px;
+    width: 240px;
   }
 
   &__right {
-  flex: 1;
-  color: #44a136;
+    flex: 1;
+    color: #44a136;
 
-    @include sp{
-  text-align: center;
-  font-size: 14px;
-  }
+    @include sp {
+      text-align: center;
+      font-size: 14px;
+    }
   }
 
   &__link-mark {
 
 
-@media screen and (max-width: 480px) {
-margin: 0 0 0 30px;
-}
+    @media screen and (max-width: 480px) {
+      margin: 0 0 0 30px;
+    }
   }
 
   &__back-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 500px;
-  margin: 0 auto;
-      justify-content: space-between;
-      gap: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin: 0 auto;
+    justify-content: space-between;
+    gap: 12px;
 
-      @include sp{
+    @include sp {
       justify-content: center;
-      }
+    }
 
   }
 
-  &__back {
-  }
+  &__back {}
 
   &__ {}
 
@@ -1021,20 +1025,62 @@ margin: 0 0 0 30px;
 }
 
 /* =================================
-
+出前講座
  ================================= */
 
-.aaa {
+.page-delivery {
 
-  &__ {}
+  hr {
+    border-top: 1px solid #44a136;
+    margin:24px 0;
 
-  &__ {}
+    @include sp {
+      margin: 24px 0;
 
-  &__ {}
+    }
+  }
 
-  &__ {}
+  &__h2 {
+    color: #44a136;
+    font-size: 18px;
+    margin: 0 0 8px;
+  }
 
-  &__ {}
+  &__text {
+    margin: 0 0 0 40px;
+
+    @include sp{
+        margin: 0;
+        padding: 0 8px;
+
+    }
+  }
+
+  &__list {
+  margin: 12px 0 0 64px;
+
+  @include sp{
+    margin: 12px 0 0 0;
+    padding: 0 18px;
+
+  }
+
+    li {
+      padding-left: 1.3em;
+      text-indent: -1.3em;
+    }
+  }
+
+
+
+  &__contact {
+  text-align: center;
+  margin: 40px 0 0;
+
+  span {
+  font-weight: bold;
+  }
+  }
 
   &__ {}
 
