@@ -23,21 +23,22 @@
 }
 
 body {
-  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+  // font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
   line-height: 1.8;
-  color: #333333;
+  color: #141414;
+  font-family: "M PLUS Rounded 1c";
 
 }
 
 p {
   font-size: clamp(0.813rem, 0.79rem + 0.11vw, 0.875rem);
-  color: #333333;
+  color: #141414;
 
 }
 
 a {
   font-size: clamp(0.813rem, 0.79rem + 0.11vw, 0.875rem);
-  color: #333333;
+  color: #141414;
 
   &:hover {
     cursor: pointer;
