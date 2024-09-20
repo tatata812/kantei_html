@@ -296,9 +296,9 @@
     &:before {
       content: url(../img/subpage/link-mark02.png);
       position: absolute;
-      top: -13px;
-      left: -38px;
-      transform: scale(0.5);
+      top: -12px;
+      left: -34px;
+      transform: scale(0.4);
     }
 
 
@@ -323,7 +323,7 @@
     margin: 0 auto;
     padding: 40px 20px;
 
-    @include sp{
+    @include sp {
       padding: 24px 20px;
 
     }
@@ -1109,6 +1109,11 @@
     span {
       font-weight: bold;
     }
+
+    @include sp{
+      margin: 24px 0 0;
+
+    }
   }
 
   &__ {}
@@ -1146,6 +1151,15 @@
 
   &__table {
     margin: 0 0 40px;
+
+    @include sp{
+      margin: 0 0 24px;
+
+    }
+
+    th {
+      white-space: nowrap;
+    }
   }
 
   &__red {
@@ -1154,6 +1168,11 @@
 
   &__text {
     margin: 0 40px 32px;
+
+    @include sp{
+      margin: 0 12px 20px;
+
+    }
   }
 
   &__ {}
@@ -1331,16 +1350,56 @@
 }
 
 /* =================================
-
+地価要覧
  ================================= */
 
-.aaa {
+.page-directory {
 
-  &__ {}
+  hr {
+    margin: 20px 0;
+  }
 
-  &__ {}
+  &__text {
+    position: relative;
+    margin: 0 32px;
+    color: #44a136;
 
-  &__ {}
+    &--sub {
+      margin: 0 32px 0 60px;
+    }
+
+
+    @include sp{
+      margin: 0;
+      color: #44a136;
+  
+      &--sub {
+        margin: 0 0 0 12px;
+      }
+    }
+  }
+
+  &__link-mark {
+    position: absolute;
+    right: 32px;
+
+    @include sp{
+      right: 0;
+
+    }
+
+  }
+
+  &__bottom-text {
+    max-width: 870px;
+    margin: 40px auto;
+    padding: 0 20px;
+
+    @include sp{
+      margin: 24px auto;
+
+    }
+  }
 
   &__ {}
 
