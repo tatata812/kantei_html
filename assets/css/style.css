@@ -793,9 +793,9 @@ table {
 .page-license__right-link:before {
   content: url(../img/subpage/link-mark.png);
   position: absolute;
-  top: -35px;
+  top: -32px;
   left: -64px;
-  transform: scale(0.4);
+  transform: scale(0.3);
 }
 .page-license__table-wrap {
   max-width: 600px;
