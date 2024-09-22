@@ -437,6 +437,14 @@ header
       margin: 0 0 4px;
 
     }
+
+    &--sub {
+      margin: 0 0 12px;
+
+      @include sp {
+text-align: left;  
+      }
+    } 
   }
 
   &__article-wrap {

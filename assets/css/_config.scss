@@ -266,6 +266,19 @@ position: relative;
 }
 }
 
+
+// ページャー
+.pager-archive {
+  text-align: center;
+    padding: 0 12px;
+}
+
+.pager-single {
+  text-align: center;
+    padding: 0 12px;
+}
+
+
 // Slick設定
 
 .slick-prev:before {
@@ -325,9 +338,9 @@ position: relative;
   }
 
   h2 {
-    font-size: 24px;
+    font-size: 22px;
     margin: 24px 0 20px;
-    color: #0b5394;
+    color: #44a136;
     font-weight: bold;
 
     @include sp {
