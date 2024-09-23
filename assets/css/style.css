@@ -1162,7 +1162,7 @@ table {
   }
 }
 /* =================================
-出前講座
+出前講座・リンク集
  ================================= */
 .page-delivery hr {
   border-top: 1px solid #44a136;
@@ -1211,6 +1211,11 @@ table {
   .page-delivery__contact {
     margin: 24px 0 0;
   }
+}
+.page-delivery__link {
+  color: #158ecf;
+  text-decoration: underline;
+  display: block;
 }
 /* =================================
 相談会
@@ -1601,6 +1606,9 @@ header
   margin: 0 auto;
   background-color: #fff;
   padding: 12px;
+}
+.header-sp__nav-item--margin {
+  margin: 0 0 16px;
 }
 .hamburger-menu {
   width: 50px;

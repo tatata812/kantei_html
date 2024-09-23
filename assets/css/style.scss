@@ -150,7 +150,13 @@ header
     padding: 12px;
   }
 
-  &__ {}
+  &__nav-item {
+
+
+    &--margin {
+      margin: 0 0 16px;
+    }
+  }
 
   &__ {}
 
