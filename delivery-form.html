@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="email=no,telephone=no,address=no">
   <!--!!!!!!!!!!!!!!!!!WPでは不要!!!!!!!!!!!!!!!!!!!!!-->
-  <title>無料相談会</title>
+  <title>出前講座申込みページ</title>
   <meta name="description" content="<?php echo $des; ?>">
   <!--!!!!!!!!!!!!!!!!!公開時、allに変更する!!!!!!!!!!!!!!!!!!!!!-->
   <meta name="robots" content="none">
@@ -91,68 +91,110 @@
     </div>
   </header>
 
-  <div class="main page-session sub-page">
+  <div class="main page-contact">
 
-    <h1 class="sub-page__ttl">無料相談会
+    <h1 class="page-contact__ttl">出前講座申込みページ</h1>
+    <section class="page-contact__section">
+      <div class="page-contact__section-inner">
 
-      <div class="sub-page__img">
-        <img src="assets/img/subpage/sub-page-img.png">
+        <p class="page-contact__text">
+          FAXまたはフォームにてお申し込み下さい。<br>
+          FAX番号 : 083-973-1048<br>
+        <a href="assets/pdf/delivery/demae.pdf"  class="sub-page__link" target="_blank">出前講座申込書</a></p>
+
+        <p class="page-contact__text">申し込み内容を記入のうえ送信してください。<br>
+          <span>※必須</span>の項目は必ず入力してください。</p>
+        <div class="page-contact__form-wrap">
+          <table class="page-contact__form-table">
+            <tr>
+              <th>団体・企業名<span>※必須</span></th>
+              <td><input type="text" class="page-contact__input"></td>
+            </tr>
+            <tr>
+              <th>担当者名<span>※必須</span></th>
+              <td><input type="text" class="page-contact__input"></td>
+            </tr>
+            <tr>
+              <th>メールアドレス<span>※必須</span></th>
+              <td><input type="text" class="page-contact__input"></td>
+            </tr>
+            <tr>
+              <th>電話番号<span>※必須</span></th>
+              <td><input type="text" class="page-contact__input"></td>
+            </tr>
+            <tr>
+              <th>希望講座（3つまで）<span>※必須</span>
+              </th>
+              <td>
+                <ul>
+                  <li><input type="checkbox" id="item1"> 不動産に関する行政法規</li>
+                  <li><input type="checkbox" id="item2"> 土地の鑑定評価</li>
+                  <li><input type="checkbox" id="item3"> 固定資産評価</li>
+                  <li><input type="checkbox" id="item4"> 公的土地評価(地価公示,地価調査,相続税,固定資産税)</li>
+                  <li><input type="checkbox" id="item5"> 不動産競売評価</li>
+                  <li><input type="checkbox" id="item6"> 物件調査の着眼点</li>
+                  <li><input type="checkbox" id="item7"> 区分所有建物及びその敷地の鑑定評価</li>
+                  <li><input type="checkbox" id="item8"> 担保物件の見方(現地調査の勘所)</li>
+                  <li><input type="checkbox" id="item9"> 借地・借家</li>
+                  <li><input type="checkbox" id="item10"> 地代</li>
+                  <li><input type="checkbox" id="item11"> 建物の鑑定評価</li>
+                  <li><input type="checkbox" id="item12"> その他 (下記の備考欄に希望のテーマを具体的に記載してください。)</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>希望日時（第1希望）<span>※必須</span></th>
+              <td><input type="text" class="page-contact__input">
+              ※10〜12時・13時〜17時の中の2時間以内</td>
+            </tr>
+            <tr>
+              <th>希望日時（第2希望）</th>
+              <td><input type="text" class="page-contact__input">
+                ※10〜12時・13時〜17時の中の2時間以内</td>
+            </tr>
+            <tr>
+              <th>開催会場<span>※必須</span></th>
+              <td><input type="text" class="page-contact__input"></td>
+            </tr>
+            <tr>
+              <th>開催会場所在地</th>
+              <td><input type="text" class="page-contact__input"></td>
+            </tr>
+            <tr>
+              <th>受講対象者<span>※必須</span></th>
+              <td><input type="text" class="page-contact__input"></td>
+            </tr>
+            <tr>
+              <th>予定人数</th>
+              <td><input type="text" class="page-contact__input"></td>
+            </tr>
+
+
+
+            <tr>
+              <th>備考<span>※必須</span></th>
+              <td><textarea class="page-contact__textarea" rows="10"></textarea></td>
+            </tr>
+          </table>
+
+        </div>
+        <p class="page-contact__bottom-text"><a href=""
+            class="page-contact__last-text-link">個人情報保護方針</a>をご確認の上、「同意する」にチェックを入れてください。</p>
+        <div class="page-contact__checkbox-wrap">
+          <input type="checkbox" class="page-contact__checkbox" />
+          <label>同意する</label>
+        </div>
+
+        <div class="page-contact__btn-wrap btn-style">
+          <input class="wpcf7-form-control wpcf7-submit has-spinner btn-style__btn page-contact__btn" type="submit"
+            value="確認画面へ">
+        </div>
+
+
+
       </div>
-    </h1>
-    <section class="sub-page__section">
-      <p class="sub-page__lead">暮らしの中のありとあらゆる“困った”にさまざまな角度からお答えします。<br>
-        ご相談は無料です。</p>
-      <div class="sub-page__section-inner">
-        <table class="page-session__table table-style">
-          <tr>
-            <th>開設日</th>
-            <td>令和６年４月１０日（水）</td>
-          </tr>
-          <tr>
-            <th>開催場所</th>
-            <td>山口県不動産鑑定士協会<br class="sp-block">（山口市小郡黄金町11-4）</td>
-          </tr>
-          <tr>
-            <th>相談時間</th>
-            <td>１０時～１２時、１３時～１６時<br class="sp-block">（１組３０分程度）</td>
-          </tr>
-          <tr>
-            <th>申込方法</th>
-            <td>４月５日（金）１５時までに<span class="page-session__red">要予約</span></td>
-          </tr>
-          <tr>
-            <th>予約受付</th>
-            <td>山口県不動産鑑定士協会 事務局　<br class="sp-block">TEL:<a href="tel:083-973-1051">083-973-1051</a></td>
-          </tr>
-          <tr>
-            <th>相談員</th>
-            <td>不動産鑑定士<br class="sp-block">（山口県不動産鑑定士協会会員）</td>
-          </tr>
-          <tr>
-            <th>相談内容</th>
-            <td>土地の価格、賃貸借、有効利用等、<br class="sp-block">不動産に関する総合相談</td>
-          </tr>
-          <tr>
-            <th>後　援</th>
-            <td>国土交通省</td>
-          </tr>
-        </table>
-        <p class="page-session__text">予約申込時にお名前、連絡先、相談内容の概要をお聞きしますので、あらかじめご了承ください。内容によっては当無料相談所でお引き受けできない場合もあります。<br>
-          <span class="page-session__red">なお、電話・メールでの無料相談は行っておりません。</span></p>
-        <p class="page-session__text">裁判中の案件のご相談はお受けできません。<br>
-          相談中の録音はお断りします。</p>
-        <p class="page-session__text">なお、この無料相談での回答は、あくまで一般的・包括的な回答になります。<br>
-          個々の具体的な事例についての回答をお求めの場合は、お近くの不動産鑑定士にご相談く
-          ださい。
-          <br><a href="member.html" class="sub-page__link">（当協会会員名簿）</a></p>
-
-      
-      </div>
 
 
-      <p class="page-delivery__contact">お問合せ先<br>
-        <span>公益社団法人 山口県不動産鑑定士協会</span><br>
-        TEL:<a href="tel:083-973-1051">083-973-1051</a> / FAX:083-973-1048</p>
     </section>
 
 

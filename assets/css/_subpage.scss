@@ -800,7 +800,7 @@
     th {
       text-align: left;
       color: #44a136;
-      padding: 8px 0 24px;
+      padding: 14px 0 24px;
       width: 280px;
       vertical-align: top;
 
@@ -824,6 +824,7 @@
     }
 
     td {
+      padding: 16px 0 0;
       @include tab {
         width: 100%;
         display: block;
