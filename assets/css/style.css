@@ -548,7 +548,7 @@ table {
 .sub-page__link-mark {
   position: relative;
   color: #158ecf;
-  margin: 0 0 0 50px;
+  margin: 0 0 0 30px;
   white-space: nowrap;
 }
 .sub-page__link-mark:before {
